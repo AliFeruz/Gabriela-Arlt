@@ -8,8 +8,8 @@ const About = () => {
 
   return (
     <section>
-        <div className='min-h-screen md:flex items-center justify-center p-5'>
-        <div className='w-1/2 px-4 flex flex-col justify-center items-start'>
+        <div className='min-h-screen md:flex items-center justify-center mt-16 p-5'>
+        <div className='md:w-1/2 px-4 flex flex-col justify-center items-start'>
           <h1 className='text-start text-3xl tracking-wider mx-4 text-greyish-100'>I truly enjoy the 
             process of getting to know my data and dig deeper until I discover what the 
             data "is telling me". My passion is data visualization and simplification of 
@@ -23,7 +23,8 @@ const About = () => {
             <img src={BGRainbow} alt="rainbow" className="w-full h-full rounded-xl object-cover contrast-200" />
           </button>
         </div>
-        <div className='flex items-center shadow-lg shadow-greyish-200 justify-center h-[60vh] w-[40vw] rounded-xl'>
+        <div className='flex items-center border border-ribbon-900 shadow-lg shadow-greyish-200 sm:mt-6 py-2
+        justify-center md:h-[60vh] md:w-[40vw] rounded-xl'>
           <video
           src={Gabr}
           className='object-cover rounded-xl inset-0 w-full h-full transition-transform duration-300 transform hover:scale-110'

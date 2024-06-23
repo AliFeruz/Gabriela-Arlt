@@ -17,8 +17,8 @@ const Contact = () => {
 
 
   return (
-    <section  className='w-full md:flex  -mt-32 items-center justify-center mx-auto p-4 sm:pb-6 min-h-screen'>
-      <div className='mx-auto flex flex-col items-center justify-center h-full'>
+    <section  className='w-full md:flex mt-16 md:-mt-32 items-center justify-center mx-auto p-4 sm:pb-6 min-h-screen'>
+      <div className='mx-auto w-full flex flex-col items-center justify-center h-full'>
         <p className='text-5xl tracking-widest lowercase text-white'>
         Contact Me
         </p>

@@ -31,7 +31,12 @@ body,
           #ffd700 20%, 
           #ffff00 30%, 
           #008000 40%, 
-          #0000ff 50%);
+          #0000ff 50%,
+          #ff69b4 60%, 
+          #ffd700 70%, 
+          #ffff00 80%, 
+          #008000 90%, 
+          #0000ff 100%);
   }
 
   button {
@@ -39,6 +44,6 @@ body,
   }
 
   .input{
-    @apply mb-5 shadow-gray-300 border-2 border-greyish-400 w-full rounded-lg bg-gradient-to-l from-ribbon-800 to-ribbon-950 px-5 py-3 placeholder:text-white placeholder:tracking-widest placeholder:lowercase;
+    @apply mb-5 shadow-gray-300 border-2 border-ribbon-900 w-full rounded-lg bg-transparent px-5 py-3 placeholder:text-white placeholder:tracking-widest placeholder:lowercase;
   }
 }

@@ -3,6 +3,8 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import { Route, Routes } from "react-router-dom";
+import ErrorPage from "./components/ErrorPage";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -14,8 +16,10 @@ function App() {
           <Route path="/" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<ErrorPage/>}/>
         </Routes>
       </main>
+      <Footer/>
     </div>
   );
 }
