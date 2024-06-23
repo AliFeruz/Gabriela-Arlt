@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
         <a href="https://public.tableau.com/app/profile/gabriela.arlt/vizzes" target='_blank'
               rel='noreferrer'>
-        <IoLogoTableau className='w-10 h-10'/>
+        <IoLogoTableau className='md:w-10 md:h-10 w-6 h-6'/>
         </a>
      </div>
      </div>
