@@ -10,7 +10,8 @@ const Footer = () => {
      <p className="md:text-xl text-ribbon-600 text-xs px-4">
     © {new Date().getFullYear()}. All rights reserved.
      </p>
-     <a href="" className="md:text-2xl text-center mr-2 text-sm md:tracking-widest">
+     <a href="https://webdevali.vercel.app/" target='_blank' rel='noreferrer' 
+     className="md:text-2xl text-center mr-2 text-sm md:tracking-widest">
         Made with Love By <span className="text-lime-500">Ali.F</span>
      </a>
      <div className='flex space-x-2 md:space-x-5 md:px-6 md:mr-4'>
