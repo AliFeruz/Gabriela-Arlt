@@ -9,6 +9,7 @@ export type ProjectType = {
     id: number,
     title: string,
     des?: string,
-    img: string,
+    img?: string,
+    video?: string,
     link?: string,
   }

@@ -1,37 +1,23 @@
-
-import { useEffect, useState } from "react";
-import NavBar from "./components/NavBar"
-import Projects from "./components/Projects"
-import { SelectedPage } from "./types";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
-
-
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.About);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setSelectedPage(SelectedPage.About);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [])
-
 
   return (
-    <>
-      <NavBar
-      selectedPage={selectedPage} 
-      setSelectedPage={setSelectedPage}/>
-      <About setSelectedPage={setSelectedPage}/>
-      <Projects setSelectedPage={setSelectedPage}/>
-      <Contact  setSelectedPage={setSelectedPage}/>
-    </>
-  )
+    <div>
+      <NavBar />
+      <main className="pt-24 md:pt-36">
+        <Routes>
+          <Route path="/" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

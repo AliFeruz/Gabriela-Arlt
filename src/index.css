@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,18 +10,35 @@ body,
 .app {
     height: auto;
     width: 100%;
-    @apply text-greyish-500;
-    @apply bg-greyish-100;
-};
-
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(0,16,4);
+    background: radial-gradient(circle, rgba(0,16,4,1) 0%, rgba(14,38,93,1) 50%, rgba(0,8,2,1) 100%);
+    @apply text-greyish-300; 
+    @apply contrast-125
+}
 
 * {
     scroll-behavior: smooth;
-  }
-  
+}
 
-  @layer components{
-    .container {
-        @apply flex flex-col items-center justify-center min-h-screen;
-      }
-};
+@layer components {
+   
+    .linear-gradient-rainbow {
+      background-image: linear-gradient(to right, 
+          #ff69b4 10%, 
+          #ffd700 20%, 
+          #ffff00 30%, 
+          #008000 40%, 
+          #0000ff 50%);
+  }
+
+  button {
+    @apply shadow-sm mt-4 shadow-gray-300 rounded-lg text-2xl lowercase mx-2 p-2 text-white tracking-widest
+  }
+
+  .input{
+    @apply mb-5 shadow-gray-300 border-2 border-greyish-400 w-full rounded-lg bg-gradient-to-l from-ribbon-800 to-ribbon-950 px-5 py-3 placeholder:text-white placeholder:tracking-widest placeholder:lowercase;
+  }
+}
