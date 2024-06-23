@@ -7,6 +7,7 @@ import Projects from '../assets/icons/projects.png';
 import About from '../assets/icons/about.png';
 import Contact from '../assets/icons/contact.png';
 import BGRainbow from '../assets/icons/spectrum-gradient.svg';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
@@ -22,15 +23,15 @@ const NavBar = () => {
                 <img src={Logo} alt="logo" width={280} height={220} className="md:ml-20 px-4"/>
                 {isAboveMediumScreens ? (
                     <div className="flex items-center justify-between gap-9">
-                        <a href="/" >
+                        <Link to="/" >
                             <img src={Projects} alt="link" className="h-12 w-22" />
-                        </a>
-                        <a href="/about" >
+                        </Link>
+                        <Link to="/about" >
                             <img src={About} alt="link" className="h-12 w-22" />
-                        </a>
-                        <a href="/contact" >
+                        </Link>
+                        <Link to="/contact" >
                             <img src={Contact} alt="link" className="h-12 w-22"/>
-                        </a>
+                        </Link>
                     </div>
                 ) : (
                     <button className="rounded-full bg-ribbon-950 p-2 border-2 border-greyish-400 mr-8" onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -48,19 +49,19 @@ const NavBar = () => {
                 </div>
                 <div className="ml-[10%] flex flex-col justify-center items-center gap-10">
                     <button onClick={() => setIsMenuToggled(false)}>
-                        <a href="/" >
+                        <Link to="/" >
                             <img src={Projects} alt="a" className="h-14 w-30" />
-                        </a>
+                        </Link>
                     </button>
                     <button onClick={() => setIsMenuToggled(false)}>
-                        <a href="/about" >
+                        <Link to="/about" >
                             <img src={About} alt="a" className="h-14 w-30" />
-                        </a>
+                        </Link>
                     </button>
                     <button onClick={() => setIsMenuToggled(false)}>
-                        <a href="/contact" >
+                        <Link to="/contact" >
                             <img src={Contact} alt="a" className="h-14 w-30"/>
-                        </a>
+                        </Link>
                     </button>
                 </div>
             </div>
