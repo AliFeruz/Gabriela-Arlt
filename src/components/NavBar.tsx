@@ -34,17 +34,17 @@ const NavBar = () => {
                         </Link>
                     </div>
                 ) : (
-                    <button className="rounded-full bg-ribbon-950 p-2 border-2 border-greyish-400 mr-8" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                        <TbMenu className="h-[30px] w-[30px] text-greyish-400"/>
+                    <button className="rounded-full bg-ribbon-950 p-2 border-2 border-ribbon-800 mr-8" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                        <TbMenu className="h-[30px] w-[30px] text-ribbon-800"/>
                     </button>
                 )}
             </div>
         </div>
         {!isAboveMediumScreens && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-gradient-to-b from-ribbon-800 via-ribbon-950 to-black drop-shadow-xl">
+            <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-gradient-to-b from-black via-ribbon-950 to-ribbon-900 drop-shadow-xl">
                 <div className="flex justify-end p-12">
                     <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                        <IoMdClose className="h-8 w-8 text-ribbon-500"/>
+                        <IoMdClose className="h-8 w-8 text-ribbon-700 rounded-full"/>
                     </button>
                 </div>
                 <div className="ml-[10%] flex flex-col justify-center items-center gap-10">
