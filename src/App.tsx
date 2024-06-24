@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <main className="pt-24 md:pt-36">
+      <main className="pt-24 pb-36 md:pb-24 md:pt-36">
         <Routes>
           <Route path="/" element={<Projects />} />
           <Route path="/about" element={<About />} />

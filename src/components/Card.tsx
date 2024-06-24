@@ -38,7 +38,7 @@ const Card = ({ project, className = '' }: Props) => {
           />
           
         )}
-        <div className='absolute inset-0 bg-gradient-to-t from-ribbon-800 to-transparent flex 
+        <div className='absolute inset-0 bg-gradient-to-t from-ribbon-900 to-transparent flex 
         items-end justify-center rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300 p-4'>
           <h3 className='text-greyish-300 text-4xl mb-10 text-center'>{project.title}</h3>
         </div>

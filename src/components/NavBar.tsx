@@ -14,7 +14,7 @@ const NavBar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] bg-gradient-to-bl from-ribbon-900 to-black">
+    <nav className="!fixed top-0 block w-full z-[100] bg-gradient-to-bl from-ribbon-900 to-black">
         <div className="absolute bottom-0 w-full h-0.5">
             <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-200" />
         </div>

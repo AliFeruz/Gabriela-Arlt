@@ -8,9 +8,17 @@ const About = () => {
 
   return (
     <section>
-        <div className='min-h-screen md:flex items-center justify-center mt-16 p-5'>
-        <div className='md:w-1/2 px-4 flex flex-col justify-center items-start'>
-          <h1 className='text-start text-3xl tracking-wider mx-4 text-greyish-100'>I truly enjoy the 
+        <div className='min-h-screen w-full flex-col flex items-center justify-center mt-14 md:-mt-14 p-5'>
+        <div className='flex items-center border border-ribbon-900 md:-mt-6 mt-10 py-2 mb-8
+        justify-center md:h-auto md:w-3/6 rounded-xl'>
+          <video
+          src={Gabr}
+          className='object-cover rounded-xl inset-0 w-full h-full transition-transform duration-300 transform hover:scale-110'
+          controls autoPlay
+          />
+        </div>
+        <div className='px-4 md:px-10 flex flex-col justify-center items-center'>
+          <h1 className='text-center text-xl mb-8 tracking-wider mx-4 text-greyish-100'>I truly enjoy the 
             process of getting to know my data and dig deeper until I discover what the 
             data "is telling me". My passion is data visualization and simplification of 
             complex findings and patterns in order for different stakeholders to understand 
@@ -18,19 +26,12 @@ const About = () => {
             communicating with people. What I have learned about myself during the years is 
             that I enjoy helping others and do not stop until a problem had been resolved: 
             Get things done today because tomorrow brings new challenges!</h1>
-            <button className='w-60 h-12 p-0 rounded-xl relative'>
-              <p className='absolute z-10 text-ribbon-950 text-center text-bold text-4xl px-6 '>Download CV</p>
+            <button className='w-64 h-10 p-0 rounded-xl relative'>
+              <p className='absolute z-[5000] text-ribbon-950 text-center text-bold text-4xl px-2 '>Download CV</p>
             <img src={BGRainbow} alt="rainbow" className="w-full h-full rounded-xl object-cover contrast-200" />
           </button>
         </div>
-        <div className='flex items-center border border-ribbon-900 shadow-lg shadow-greyish-200 sm:mt-6 py-2
-        justify-center md:h-[60vh] md:w-[40vw] rounded-xl'>
-          <video
-          src={Gabr}
-          className='object-cover rounded-xl inset-0 w-full h-full transition-transform duration-300 transform hover:scale-110'
-          controls autoPlay
-          />
-        </div>
+        
         </div>
     </section>
   )
