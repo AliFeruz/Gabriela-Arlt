@@ -16,7 +16,7 @@ const Card = ({ project, className = '' }: Props) => {
   return (
     <div
       onClick={handleClick}
-      className={`relative flex flex-col cursor-pointer items-center border-2 rounded-xl border-greyish-400
+      className={`relative flex flex-col cursor-pointer items-center rounded-xl 
       justify-center hover:shadow-lg transition-shadow duration-300 ${className}`}
     >
       <div className="absolute w-full h-full">
