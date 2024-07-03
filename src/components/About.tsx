@@ -15,7 +15,7 @@ const About = () => {
           <video
           src={Gabr}
           className='object-cover rounded-xl inset-0 w-full h-full transition-transform duration-300 transform hover:scale-110'
-          controls autoPlay
+          controls autoPlay muted
           />
         </div>
         <div className='px-4 md:px-10 flex flex-col justify-center items-center'>
@@ -27,8 +27,8 @@ const About = () => {
             communicating with people. What I have learned about myself during the years is 
             that I enjoy helping others and do not stop until a problem had been resolved: 
             Get things done today because tomorrow brings new challenges!</h1>
-            <a className='w-64 h-10 p-0 rounded-xl relative' href={CV} target='_blank'>
-              <p className='absolute z-[5000] text-ribbon-950 text-center text-bold text-4xl px-2 '>Download CV</p>
+            <a className='w-64 h-10 p-0 rounded-xl relative flex items-center justify-center' href={CV} target='_blank'>
+              <p className='absolute z-[5000] text-ribbon-950 text-center text-bold text-2xl px-2 '>Download My CV</p>
             <img src={BGRainbow} alt="rainbow" className="w-full h-full rounded-xl object-cover contrast-200" />
           </a>
         </div>

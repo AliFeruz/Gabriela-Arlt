@@ -6,12 +6,12 @@ import BGRainbow from '../assets/icons/spectrum-gradient.svg';
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto fixed bottom-0 bg-ribbon-950/30">
+    <div className="w-full h-auto fixed bottom-0">
       <div className="absolute top-0 w-full h-0.5">
             <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-200" />
         </div>
      <div className="flex items-center justify-between p-10">
-     <p className="md:text-xl text-ribbon-600 text-xs px-4">
+     <p className="md:text-xl text-gray-300 text-xs px-4">
     © {new Date().getFullYear()}. All rights reserved.
      </p>
      <a href="https://webdevali.vercel.app/" target='_blank' rel='noreferrer' 
