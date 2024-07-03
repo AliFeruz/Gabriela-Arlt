@@ -14,7 +14,7 @@ const Contact = () => {
   }
 
   return (
-    <section className='relative w-full min-h-screen flex items-center justify-center p-4 md:mb-12 sm:pb-6 mt-16 md:-mt-32'>
+    <section className='relative w-full min-h-screen flex items-center justify-center p-4 md:mb-12 sm:pb-6 md:-mt-32'>
       <div className='absolute inset-0 flex items-end justify-end w-5/6 z-0'>
         <img src={triangle} alt="triangle" className='md:h-[13rem] md:w-[13rem] h-20 w-20 opacity-75' />
       </div>
@@ -27,7 +27,7 @@ const Contact = () => {
           target='_blank'
           onSubmit={onSubmit}
           method='POST'
-          action='https://formsubmit.co/aliferuzcode@gmail.com'>
+          action='https://formsubmit.co/gabriela.arlt.mail@gmail.com'>
           <input type="text"
             className='input'
             placeholder='NAME'
@@ -71,7 +71,8 @@ const Contact = () => {
           )}
           <button type='submit' className='w-60 border relative'>
             SUBMIT
-            <img src={BGRainbow} alt="rainbow" className="absolute top-0 left-0 opacity-70 rounded-lg w-full h-full object-cover contrast-100" />
+            <img src={BGRainbow} alt="rainbow" className="absolute top-0 left-0 opacity-70 rounded-lg 
+            w-full h-full object-cover contrast-100" />
           </button>
         </form>
       </div>

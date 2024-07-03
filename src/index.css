@@ -39,7 +39,7 @@ body,
   }
 
   button {
-    @apply shadow-sm mt-4 shadow-gray-300 rounded-lg text-2xl lowercase mx-2 p-2 text-white tracking-widest
+    @apply mt-4 shadow-gray-300 rounded-lg text-2xl lowercase mx-2 p-2 text-white tracking-widest
   }
 
   .input{
