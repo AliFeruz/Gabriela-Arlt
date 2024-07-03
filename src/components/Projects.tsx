@@ -9,9 +9,9 @@ const Projects = () => {
     <div className='w-full h-auto flex items-center justify-center p-4 md:p-10'>
       <div className='md:mx-10 mx-2'>  
       {isAboveMediumScreens ? (
-        <div className='mb-10'>
+        <div className='mb-10 flex flex-col'>
         <div className='w-full min-h-screen -mt-20 flex items-center justify-center'>
-        <Card project={ProjectCard[0]} className='w-full'/>
+        <Card project={ProjectCard[0]} className='w-full h-[75vh]'/>
         </div>
         <div className='flex -mx-2 mb-6 gap-3'>
         <div className='w-2/3 px-2'>

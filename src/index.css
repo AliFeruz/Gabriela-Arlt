@@ -14,7 +14,6 @@ body,
     font-weight: 400;
     font-style: normal;
     background: rgb(0,16,4);
-    background: radial-gradient(circle, rgba(0,16,4,1) 0%, rgba(14,38,93,1) 50%, rgba(0,8,2,1) 100%);
     @apply text-greyish-300; 
     @apply contrast-125
 }
@@ -44,6 +43,6 @@ body,
   }
 
   .input{
-    @apply mb-5 shadow-gray-300 border-2 border-ribbon-900 w-full rounded-lg bg-transparent px-5 py-3 placeholder:text-white placeholder:tracking-widest placeholder:lowercase;
+    @apply mb-5 shadow-gray-300 border-2  w-full rounded-lg bg-transparent px-5 py-3 placeholder:text-white placeholder:tracking-widest placeholder:lowercase;
   }
 }

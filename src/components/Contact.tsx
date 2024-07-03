@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { FormEvent } from 'react';
 import triangle from '../assets/icons/triangle.png';
+import BGRainbow from '../assets/icons/spectrum-gradient.svg';
 
 const Contact = () => {
   const { trigger, register, formState: { errors } } = useForm();
@@ -68,8 +69,9 @@ const Contact = () => {
               {errors.message.type === 'maxLength' && 'Max length is 2000 char.'}
             </p>
           )}
-          <button type='submit' className='w-60 border border-ribbon-800 bg-gradient-to-bl from-ribbon-800 to-ribbon-950'>
+          <button type='submit' className='w-60 border relative'>
             SUBMIT
+            <img src={BGRainbow} alt="rainbow" className="absolute top-0 left-0 opacity-70 rounded-lg w-full h-full object-cover contrast-100" />
           </button>
         </form>
       </div>

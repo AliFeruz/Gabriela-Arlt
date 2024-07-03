@@ -1,5 +1,6 @@
 import Gabr from '../assets/videos/website_about.mp4'
 import BGRainbow from '../assets/icons/spectrum-gradient.svg';
+import CV from '../assets/simple_resume.pdf'
 
 
   
@@ -9,7 +10,7 @@ const About = () => {
   return (
     <section>
         <div className='min-h-screen w-full flex-col flex items-center justify-center mt-14 md:-mt-14 p-5'>
-        <div className='flex items-center border border-ribbon-900 md:-mt-6 mt-10 py-2 mb-8
+        <div className='flex items-center border md:-mt-6 mt-10 py-2 mb-8
         justify-center md:h-auto md:w-3/6 rounded-xl'>
           <video
           src={Gabr}
@@ -26,10 +27,10 @@ const About = () => {
             communicating with people. What I have learned about myself during the years is 
             that I enjoy helping others and do not stop until a problem had been resolved: 
             Get things done today because tomorrow brings new challenges!</h1>
-            <button className='w-64 h-10 p-0 rounded-xl relative'>
+            <a className='w-64 h-10 p-0 rounded-xl relative' href={CV} target='_blank'>
               <p className='absolute z-[5000] text-ribbon-950 text-center text-bold text-4xl px-2 '>Download CV</p>
             <img src={BGRainbow} alt="rainbow" className="w-full h-full rounded-xl object-cover contrast-200" />
-          </button>
+          </a>
         </div>
         
         </div>
