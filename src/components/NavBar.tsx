@@ -20,7 +20,10 @@ const NavBar = () => {
         </div>
         <div className="flex items-center justify-between contrast-75 py-6">
             <div className="flex items-center justify-between mx-auto md:px-20 px-10 w-full">
+                <Link to={'/'}>
                 <img src={Logo} alt="logo" width={280} height={220} className="md:ml-20 px-4"/>
+                </Link>
+                
                 {isAboveMediumScreens ? (
                     <div className="flex items-center justify-between gap-9">
                         <Link to="/" >

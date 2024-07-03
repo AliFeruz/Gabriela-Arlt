@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <section className='relative w-full min-h-screen flex items-center justify-center p-4 md:mb-12 sm:pb-6 mt-16 md:-mt-32'>
       <div className='absolute inset-0 flex items-end justify-end w-5/6 z-0'>
-        <img src={triangle} alt="triangle" className='h-[13rem] w-[13rem] opacity-75' />
+        <img src={triangle} alt="triangle" className='md:h-[13rem] md:w-[13rem] h-20 w-20 opacity-75' />
       </div>
       <div className='relative z-10 w-full flex flex-col items-center justify-center h-full'>
         <p className='text-5xl tracking-widest lowercase text-white'>
