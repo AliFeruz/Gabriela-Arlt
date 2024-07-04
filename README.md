@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Gabriela Arlt's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I built this portfolio website for Gabriela Arlt, a data visualization expert. The project is developed using React and styled with Tailwind CSS, ensuring a responsive and modern user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Bento Grid Layout**: The website showcases Gabriela's data visualizations using a bento grid layout, providing a clean and organized display of her work.
+- **Interactive Contact Form**: Implemented using react-hook-form, the contact form allows visitors to easily get in touch with Gabriela.
+- **Responsive Design**: Tailwind CSS ensures the website is fully responsive, offering a seamless experience across all devices.
+- **Smooth Navigation**: The site includes smooth navigation, making it easy for visitors to browse through different sections of the portfolio.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: For building the interactive and dynamic components of the website.
+- **Tailwind CSS**: For styling and ensuring a responsive design.
+- **react-hook-form**: To create a robust and user-friendly contact form.
 
-- Configure the top-level `parserOptions` property like this:
+## Visit the Project
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+You can visit Gabriela Arlt's portfolio website [here](https://gabriela-arlt.vercel.app/).
