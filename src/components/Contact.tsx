@@ -1,23 +1,29 @@
 import { useForm } from 'react-hook-form';
-import { FormEvent } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import triangle from '../assets/icons/triangle.png';
-import BGRainbow from '../assets/icons/spectrum-gradient.svg';
 
 const Contact = () => {
   const { trigger, register, formState: { errors } } = useForm();
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRotation((prevRotation) => prevRotation + 90);
+    }, 3000); // Rotate every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const onSubmit = async (e: FormEvent) => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
     }
-  }
+  };
 
   return (
-    <section className='relative w-full min-h-screen flex items-center justify-center p-4 md:mb-12 sm:pb-6 md:-mt-32'>
-      <div className='absolute inset-0 flex items-end justify-end w-5/6 z-0'>
-        <img src={triangle} alt="triangle" className='md:h-[13rem] md:w-[13rem] h-20 w-20 opacity-75' />
-      </div>
+    <section className='relative w-full min-h-screen flex items-center justify-center
+    md:mb-12 sm:pb-6 md:-mt-20 px-8 sm:px-16 md:px-32 lg:px-64'>
       <div className='relative z-10 w-full flex flex-col items-center justify-center h-full'>
         <p className='text-5xl tracking-widest lowercase text-white'>
           Contact Me
@@ -69,15 +75,18 @@ const Contact = () => {
               {errors.message.type === 'maxLength' && 'Max length is 2000 char.'}
             </p>
           )}
-          <button type='submit' className='w-60 border relative'>
-            SUBMIT
-            <img src={BGRainbow} alt="rainbow" className="absolute top-0 left-0 opacity-70 rounded-lg 
-            w-full h-full object-cover contrast-100" />
+          <button type='submit' className='inset-0 flex items-center justify-center w-5/6 z-0'>
+            <img
+              src={triangle}
+              alt="triangle"
+              className='md:h-[11rem] md:w-[11rem] h-20 w-20 opacity-75 transition-transform duration-500'
+              style={{ transform: `rotate(${rotation}deg)` }}
+            />
           </button>
         </form>
       </div>
     </section>
-  )
+  );
 }
 
 export default Contact;

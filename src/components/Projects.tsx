@@ -6,7 +6,7 @@ import useMediaQuery from '../hooks';
 const Projects = () => {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
   return (
-    <div className='w-full h-auto flex items-center justify-center p-4 md:p-10'>
+    <div className='w-full h-auto flex items-center justify-center md:p-10 px-8 sm:px-16 md:px-32'>
       <div className='md:mx-10 mx-2'>  
       {isAboveMediumScreens ? (
         <div className='mb-10 flex flex-col'>

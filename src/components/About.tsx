@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <section>
-        <div className='min-h-screen w-full flex-col flex items-center justify-center mt-14 md:-mt-14 p-5'>
+        <div className='min-h-screen w-full flex-col flex items-center justify-center mt-14 md:-mt-14 px-8 sm:px-16 md:px-32'>
         <div className='flex items-center border md:-mt-6 mt-10 py-2 mb-8
         justify-center md:h-auto md:w-3/6 rounded-xl'>
           <video
