@@ -21,19 +21,19 @@ const NavBar = () => {
         <div className="flex items-center justify-between py-4 sm:py-6">
             <div className="flex items-center justify-between mx-auto md:px-20 px-4 w-full">
                 <Link to={'/'}>
-                <img src={Logo} alt="logo" width={280} height={220} className="md:ml-20 px-4"/>
+                <img src={Logo} alt="logo"  className="md:ml-20 h-16 sm:h-24 w-full object-fill px-4"/>
                 </Link>
                 
                 {isAboveMediumScreens ? (
                     <div className="flex items-center justify-between gap-9">
                         <Link to="/" >
-                            <img src={Projects} alt="link" className="h-12 w-22 cursor-pointer" />
+                            <img src={Projects} alt="link" className="h-12 w-full cursor-pointer" />
                         </Link>
                         <Link to="/about" >
-                            <img src={About} alt="link" className="h-12 w-22 cursor-pointer" />
+                            <img src={About} alt="link" className="h-12 w-full cursor-pointer" />
                         </Link>
                         <Link to="/contact" >
-                            <img src={Contact} alt="link" className="h-12 w-22 cursor-pointer"/>
+                            <img src={Contact} alt="link" className="h-12 w-full cursor-pointer"/>
                         </Link>
                     </div>
                 ) : (
