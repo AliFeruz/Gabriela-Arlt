@@ -38,9 +38,9 @@ const Card = ({ project, className = '' }: Props) => {
           />
           
         )}
-        <div className='absolute inset-0 bg-black/[.4] flex z-10
+        <div className='absolute inset-0 bg-black/30 flex z-10
         items-end justify-center rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300 p-4'>
-          <h3 className='text-greyish-200 text-4xl mb-10 text-center'>{project.title}</h3>
+          <h3 className='text-white text-4xl mb-10 text-center'>{project.title}</h3>
         </div>
       </div>
     </div>

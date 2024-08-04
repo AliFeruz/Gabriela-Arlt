@@ -6,7 +6,7 @@ import BGRainbow from '../assets/icons/spectrum-gradient.svg';
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto fixed bottom-0">
+    <footer className="w-full h-auto relative">
       <div className="absolute top-0 w-full h-0.5">
             <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-200" />
         </div>
@@ -15,8 +15,8 @@ const Footer = () => {
     © {new Date().getFullYear()}. All rights reserved.
      </p>
      <a href="aliferuz.com" target='_blank' rel='noreferrer' 
-     className="md:text-xl text-center font-thin mr-4 text-xs md:tracking-widest">
-        Made with Love By <span className="text-lime-500">Ali.F</span>
+     className="md:text-xl text-center text-white font-thin mr-4 text-xs md:tracking-widest">
+        Made with Love By <span className="text-lime-500">aliferuz.com</span>
      </a>
      <div className='flex space-x-2 md:space-x-5 md:px-6 md:mr-4'>
         <a href="https://www.linkedin.com/in/gabriela-arlt-a9695782/" target='_blank'
@@ -33,7 +33,7 @@ const Footer = () => {
         </a>
      </div>
      </div>
-    </div>
+    </footer>
   )
 }
 

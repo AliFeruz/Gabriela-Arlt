@@ -8,14 +8,8 @@ html,
 body,
 #root,
 .app {
-    height: auto;
-    width: 100%;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background: #09090b;
-    @apply text-greyish-300; 
-    @apply contrast-125
+    background: #09011c;
 }
 
 * {
@@ -24,20 +18,6 @@ body,
 
 @layer components {
    
-    .linear-gradient-rainbow {
-      background-image: linear-gradient(to right, 
-          #ff69b4 10%, 
-          #ffd700 20%, 
-          #ffff00 30%, 
-          #008000 40%, 
-          #0000ff 50%,
-          #ff69b4 60%, 
-          #ffd700 70%, 
-          #ffff00 80%, 
-          #008000 90%, 
-          #0000ff 100%);
-  }
-
   button {
     @apply mt-4 shadow-gray-300 rounded-lg text-2xl lowercase mx-2 p-2 text-white tracking-widest
   }

@@ -14,12 +14,12 @@ const NavBar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 
   return (
-    <nav className="!fixed left-0 top-0 block w-full z-[100] bg-black">
+    <nav className="!fixed left-0 top-0 block w-full z-[100] bg-[#0a011d]">
         <div className="absolute bottom-0 w-full h-0.5">
             <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-200" />
         </div>
-        <div className="flex items-center justify-between contrast-75 py-6">
-            <div className="flex items-center justify-between mx-auto md:px-20 px-10 w-full">
+        <div className="flex items-center justify-between py-4 sm:py-6">
+            <div className="flex items-center justify-between mx-auto md:px-20 px-4 w-full">
                 <Link to={'/'}>
                 <img src={Logo} alt="logo" width={280} height={220} className="md:ml-20 px-4"/>
                 </Link>
@@ -27,24 +27,24 @@ const NavBar = () => {
                 {isAboveMediumScreens ? (
                     <div className="flex items-center justify-between gap-9">
                         <Link to="/" >
-                            <img src={Projects} alt="link" className="h-12 w-22" />
+                            <img src={Projects} alt="link" className="h-12 w-22 cursor-pointer" />
                         </Link>
                         <Link to="/about" >
-                            <img src={About} alt="link" className="h-12 w-22" />
+                            <img src={About} alt="link" className="h-12 w-22 cursor-pointer" />
                         </Link>
                         <Link to="/contact" >
-                            <img src={Contact} alt="link" className="h-12 w-22"/>
+                            <img src={Contact} alt="link" className="h-12 w-22 cursor-pointer"/>
                         </Link>
                     </div>
                 ) : (
-                    <button className="rounded-full  p-2 border-2 border-gray-300 mr-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                        <TbMenu className="h-[30px] w-[30px] text-gray-200"/>
+                    <button className="rounded-full  p-2 border-2 border-gray-50 mr-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                        <TbMenu className="h-[24px] w-[24px] text-gray-50"/>
                     </button>
                 )}
             </div>
         </div>
         {!isAboveMediumScreens && isMenuToggled && (
-            <div className="fixed right-0 top-0 z-40 min-h-screen w-[300px] bg-slate-900">
+            <div className="fixed right-0 top-0 z-40 min-h-screen w-[300px] bg-slate-950">
                 <div className="flex justify-end p-12">
                     <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                         <IoMdClose className="h-8 w-8 text-gray-300 rounded-full"/>
@@ -53,17 +53,17 @@ const NavBar = () => {
                 <div className="ml-[10%] flex flex-col justify-center items-center gap-10">
                     <button onClick={() => setIsMenuToggled(false)}>
                         <Link to="/" >
-                            <img src={Projects} alt="a" className="h-14 w-30" />
+                            <img src={Projects} alt="a" className="h-14 w-30 cursor-pointer" />
                         </Link>
                     </button>
                     <button onClick={() => setIsMenuToggled(false)}>
                         <Link to="/about" >
-                            <img src={About} alt="a" className="h-14 w-30" />
+                            <img src={About} alt="a" className="h-14 w-30 cursor-pointer" />
                         </Link>
                     </button>
                     <button onClick={() => setIsMenuToggled(false)}>
                         <Link to="/contact" >
-                            <img src={Contact} alt="a" className="h-14 w-30"/>
+                            <img src={Contact} alt="a" className="h-14 w-30 cursor-pointer"/>
                         </Link>
                     </button>
                 </div>

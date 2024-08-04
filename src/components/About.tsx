@@ -19,7 +19,7 @@ const About = () => {
           />
         </div>
         <div className='px-4 md:px-10 flex flex-col justify-center items-center'>
-          <h1 className='text-center text-xl mb-8 tracking-wider mx-4 text-greyish-100'>I truly enjoy the 
+          <h1 className='text-center text-xl mb-8 tracking-wider mx-4 text-white'>I truly enjoy the 
             process of getting to know my data and dig deeper until I discover what the 
             data "is telling me". My passion is data visualization and simplification of 
             complex findings and patterns in order for different stakeholders to understand 

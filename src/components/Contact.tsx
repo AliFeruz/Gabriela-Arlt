@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <section className='relative w-full min-h-screen flex items-center justify-center
-    md:mb-12 sm:pb-6 md:-mt-20 px-8 sm:px-16 md:px-32 lg:px-64'>
+      md:-mt-20 px-8 sm:px-16 md:px-32 lg:px-64'>
       <div className='relative z-10 w-full flex flex-col items-center justify-center h-full'>
         <p className='text-5xl tracking-widest lowercase text-white'>
           Contact Me
