@@ -27,7 +27,7 @@ const Card = ({ project, className = '' }: Props) => {
           <img
             src={project.img}
             alt={project.title}
-            className='object-cover rounded-xl inset-0 w-full h-full transition-transform duration-300 transform hover:scale-110'
+            className='object-fill rounded-xl inset-0 w-full h-full transition-transform duration-300 transform hover:scale-110'
           />
         )}
         {project.video && (

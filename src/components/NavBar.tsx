@@ -5,7 +5,6 @@ import useMediaQuery from "../hooks";
 import Logo from '../assets/icons/gabriela.png';
 import Projects from '../assets/icons/projects.png';
 import About from '../assets/icons/about.png';
-import Contact from '../assets/icons/contact.png';
 import BGRainbow from '../assets/icons/spectrum-gradient.svg';
 import { Link } from "react-router-dom";
 
@@ -21,19 +20,16 @@ const NavBar = () => {
         <div className="flex items-center justify-between py-4 sm:py-6">
             <div className="flex items-center justify-between mx-auto md:px-20 px-4 w-full">
                 <Link to={'/'}>
-                <img src={Logo} alt="logo"  className="md:ml-20 h-16 sm:h-24 w-full object-fill px-4"/>
+                <img src={Logo} alt="logo"  className="md:ml-20 h-16 sm:h-40 w-full object-fill px-4"/>
                 </Link>
                 
                 {isAboveMediumScreens ? (
                     <div className="flex items-center justify-between gap-9">
                         <Link to="/" >
-                            <img src={Projects} alt="link" className="h-12 w-full cursor-pointer" />
+                            <img src={Projects} alt="link" className="h-12 w-full cursor-pointer hover:scale-125 ease-in transition-all" />
                         </Link>
                         <Link to="/about" >
-                            <img src={About} alt="link" className="h-12 w-full cursor-pointer" />
-                        </Link>
-                        <Link to="/contact" >
-                            <img src={Contact} alt="link" className="h-12 w-full cursor-pointer"/>
+                            <img src={About} alt="link" className="h-12 w-full cursor-pointer hover:scale-125 ease-in transition-all" />
                         </Link>
                     </div>
                 ) : (
@@ -59,11 +55,6 @@ const NavBar = () => {
                     <button onClick={() => setIsMenuToggled(false)}>
                         <Link to="/about" >
                             <img src={About} alt="a" className="h-14 w-30 cursor-pointer" />
-                        </Link>
-                    </button>
-                    <button onClick={() => setIsMenuToggled(false)}>
-                        <Link to="/contact" >
-                            <img src={Contact} alt="a" className="h-14 w-30 cursor-pointer"/>
                         </Link>
                     </button>
                 </div>

@@ -8,7 +8,10 @@ const Projects = () => {
   return (
     <div className="w-full h-auto flex items-center justify-center container mx-auto px-8 sm:px-16 md:px-32">
       {isAboveMediumScreens ? (
-        <div className="pb-5 flex flex-col mt-10">
+        <div className="pb-5 flex flex-col sm:mt-20 gap-3">
+          <div className="w-full  h-[75vh] flex items-center justify-center pb-20">
+          <iframe className='w-full h-full' src="https://www.youtube.com/embed/QU3SPdAyBxQ?si=bcl2B8zBmscE8wlt" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
           <div className="flex -mx-2 mb-6 gap-3">
             <div className="w-2/3 px-2">
               <Card project={ProjectCard[1]} className="h-full" />
@@ -17,9 +20,6 @@ const Projects = () => {
               <Card project={ProjectCard[2]} />
               <Card project={ProjectCard[3]} />
             </div>
-          </div>
-          <div className="w-full h-auto flex items-center justify-center mb-6">
-            <Card project={ProjectCard[0]} className="w-full h-[75vh]" />
           </div>
           <div className="flex -mx-2 mb-6 gap-3">
             <div className="w-1/3 px-2 flex flex-col space-y-4">
@@ -41,8 +41,8 @@ const Projects = () => {
               <Card project={ProjectCard[9]} className="h-full" />
             </div>
           </div>
-          <div className="w-full h-full flex items-center justify-center mb-6">
-            <Card project={ProjectCard[10]} className="w-full" />
+          <div className="w-full  h-full flex items-center justify-center mb-6">
+            
           </div>
           <div className="flex -mx-2 mb-6 gap-3">
             <div className="w-2/3 px-2">
@@ -54,14 +54,14 @@ const Projects = () => {
               <Card project={ProjectCard[14]} />
             </div>
           </div>
-          <div className="flex -mx-2 mb-6 gap-3">
+          <div className="flex min-h-screen -mx-2 mb-6 gap-3">
             <div className="w-1/3 px-2 flex flex-col items-cent space-y-4">
               <Card project={ProjectCard[15]} />
-              <Card project={ProjectCard[16]} />
               <Card project={ProjectCard[14]} />
             </div>
-            <div className="w-2/3 px-2">
-              <Card project={ProjectCard[11]} className="h-full" />
+            <div className="w-2/3 px-2 space-y-4 h-full">
+            <Card project={ProjectCard[16]} />
+            <Card project={ProjectCard[10]} />
             </div>
           </div>
         </div>
