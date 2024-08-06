@@ -57,11 +57,11 @@ const Projects = () => {
           <div className="flex min-h-screen -mx-2 mb-6 gap-3">
             <div className="w-1/3 px-2 flex flex-col items-cent space-y-4">
               <Card project={ProjectCard[15]} />
-              <Card project={ProjectCard[14]} />
+              <Card project={ProjectCard[10]} />
             </div>
             <div className="w-2/3 px-2 space-y-4 h-full">
             <Card project={ProjectCard[16]} />
-            <Card project={ProjectCard[10]} />
+           
             </div>
           </div>
         </div>
