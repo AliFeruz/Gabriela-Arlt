@@ -15,12 +15,12 @@ const NavBar = () => {
   return (
     <nav className="!fixed left-0 top-0 block w-full z-[100] bg-[#0a011d]">
         <div className="absolute bottom-0 w-full h-0.5">
-            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-200" />
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100" />
         </div>
         <div className="flex items-center justify-between py-4 sm:py-6">
             <div className="flex items-center justify-between mx-auto md:px-20 px-4 w-full">
                 <Link to={'/'}>
-                <img src={Logo} alt="logo"  className="md:ml-20 h-16 sm:h-40 w-full object-fill px-4"/>
+                <img src={Logo} alt="logo"  className="md:ml-20 h-16 sm:h-36 w-full object-fill px-4"/>
                 </Link>
                 
                 {isAboveMediumScreens ? (

@@ -20,7 +20,7 @@ const Card = ({ project, className = '' }: Props) => {
       justify-center hover:shadow-lg transition-shadow duration-300 ${className}`}
     >
       <div className="absolute w-full h-full">
-        <img src={BGRainbow} alt="bg" className="w-full h-full rounded-xl object-cover contrast-200" />
+        <img src={BGRainbow} alt="bg" className="w-full h-full rounded-xl object-cover contrast-100" />
       </div>
       <div className='relative w-full h-full overflow-hidden p-0.5'>
         {project.img && (
