@@ -123,7 +123,7 @@ const Projects = () => {
           </div>
           <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/GD-5spY5EBo?si=NvNZWnDEUue5NkGH" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
-          {ProjectCard.map((project, index) => (
+          {ProjectCard.slice().reverse().map((project, index) => (
             <Card key={index} project={project} />
           ))}
         </div>
