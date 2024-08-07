@@ -9,17 +9,16 @@ const About = () => {
 
   return (
     <section>
-        <div className='min-h-screen w-full flex-col flex items-center justify-center mt-14 md:-mt-14 px-8 sm:px-16 md:px-32'>
-        <div className='flex items-center border md:-mt-6 mt-10 mb-8
-        justify-center md:h-auto md:w-3/6 rounded-xl'>
+        <div className='min-h-screen w-full flex-col flex px-8 mt-12 sm:mt-20 sm:px-16 md:px-32'>
+        <div className='flex items-center mb-6 justify-center rounded-xl '>
           <video
           src={Gabr}
-          className='object-cover rounded-xl inset-0 w-full h-full transition-transform duration-300 transform hover:scale-110'
+          className='object-cover rounded-xl inset-0 md:w-4/6 md:h-1/3 w-full h-full transition-transform duration-300 transform hover:scale-105'
           controls autoPlay muted
           />
         </div>
-        <div className='px-4 md:px-10 flex flex-col justify-center items-center'>
-          <h1 className='text-center text-xl mb-8 tracking-wider mx-4 text-white'>I truly enjoy the 
+        <div className='md:px-10 flex flex-col justify-center items-center'>
+          <h1 className='text-center sm:text-xl text-base mb-8 tracking-wider text-white'>I truly enjoy the 
             process of getting to know my data and dig deeper until I discover what the 
             data "is telling me". My passion is data visualization and simplification of 
             complex findings and patterns in order for different stakeholders to understand 
