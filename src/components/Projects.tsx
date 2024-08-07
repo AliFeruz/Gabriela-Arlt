@@ -10,7 +10,7 @@ const Projects = () => {
     <div className="w-full h-auto flex items-center justify-center container mx-auto px-8 sm:px-16 md:px-32">
       {isAboveMediumScreens ? (
         <div className="pb-5 flex flex-col sm:mt-20 gap-3">
-          <div className="w-full  h-[75vh] flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="w-full  h-[70vh] flex items-center justify-center mb-10 relative rounded-xl">
           <div className="absolute bottom-0 w-full h-full">
             <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
           </div>
