@@ -4,7 +4,7 @@ import BOX4_ML_Unona_github from "../assets/BOX4_ML_Unona_github.png";
 import BOX5_DatabaseDesign_github from "../assets/BOX5_DatabaseDesign_github.png";
 import BOX6_ML_Disk_Purch_github from "../assets/BOX6_ML_Disk_Purch_github.png";
 import BOX7_office_supplies_Tableau from "../assets/BOX7_office_supplies_Tableau.png";
-import BOX8_furniture_Tableau from "../assets/BOX8_furniture_Tableau.png";
+import BOX8_furniture_Tableau from "../assets/furniture.png";
 import BOX9_technology_Tableau from "../assets/BOX9_technology_Tableau.png";
 import box12_red_wine_heatmap from "../assets/box12_red_wine_heatmap.png";
 import BOX11_bikeshare_github from "../assets/BOX11_bikeshare_github.png";
@@ -72,7 +72,7 @@ export const ProjectCard: ProjectType[] = [
     title: "Furniture Dashboard",
     des: "",
     img: BOX8_furniture_Tableau,
-    link: "https://public.tableau.com/app/profile/gabriela.arlt/viz/Dashboard_office_superstore/Furniture",
+    link: "https://public.tableau.com/app/profile/gabriela.arlt/viz/Dashboard_furniture_superstore/FurnitureDashboard",
   },
   {
     id: 9,

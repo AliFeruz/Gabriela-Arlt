@@ -16,6 +16,30 @@ const Projects = () => {
           </div>
           <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/QU3SPdAyBxQ?si=bcl2B8zBmscE8wlt" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
+          <div className="w-full  h-[70vh] flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/UyEzFsNb0dY?si=yr16ABZI1BLtGoem"  title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full  h-[70vh] flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/tgoCswewt4c?si=BH8CtwmBAig2SL0j" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full  h-[70vh] flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/VhqVSlxbtns?si=iJEPTbg7jGyueAAG"  title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full  h-[70vh] flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/GD-5spY5EBo?si=NvNZWnDEUue5NkGH" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
           <div className="flex -mx-2 mb-6 gap-3 px-2">
               <Card project={ProjectCard[17]} />
               <Card project={ProjectCard[16]} />  
@@ -62,9 +86,9 @@ const Projects = () => {
               <Card project={ProjectCard[14]} />
             </div>
           </div>
-          <div className="flex -mx-2 gap-3 px-2">
-              <Card project={ProjectCard[15]} />
-              <Card project={ProjectCard[10]} />  
+          <div className="flex -mx-2 gap-3 px-2 w-full">
+              <Card project={ProjectCard[15]} className="w-full"/>
+              <Card project={ProjectCard[10]} className="h-full"/>  
           </div>
         </div>
       ) : (
@@ -74,6 +98,30 @@ const Projects = () => {
             <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
           </div>
           <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/QU3SPdAyBxQ?si=bcl2B8zBmscE8wlt" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full  h-full flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/UyEzFsNb0dY?si=yr16ABZI1BLtGoem" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full  h-full flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/tgoCswewt4c?si=BH8CtwmBAig2SL0j" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full  h-full flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/VhqVSlxbtns?si=iJEPTbg7jGyueAAG" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full  h-full flex items-center justify-center mb-10 relative rounded-xl">
+          <div className="absolute bottom-0 w-full h-full">
+            <img src={BGRainbow} alt="bg" className="w-full h-full object-cover contrast-100 rounded-xl" />
+          </div>
+          <iframe className='w-full h-full p-0.5 z-20 rounded-xl' src="https://www.youtube.com/embed/GD-5spY5EBo?si=NvNZWnDEUue5NkGH" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
           {ProjectCard.map((project, index) => (
             <Card key={index} project={project} />
