@@ -14,7 +14,7 @@ const Footer = () => {
      <p className="md:text-xl text-gray-300 font-thin text-xs md:px-4">
     © {new Date().getFullYear()}. All rights reserved.
      </p>
-     <a href="aliferuz.com" target='_blank' rel='noreferrer' 
+     <a href="https://www.aliferuz.com/" target='_blank' rel='noreferrer' 
      className="md:text-xl text-center text-white font-thin mr-4 text-xs md:tracking-widest">
         Made with Love By <span className="text-lime-500">aliferuz.com</span>
      </a>
